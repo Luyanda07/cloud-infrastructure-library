@@ -1,13 +1,12 @@
 package com.cloudinfra.model;
 
-public enum Complexity {
-    BEGINNER("Beginner"),
-    INTERMEDIATE("Intermediate"),
-    ADVANCED("Advanced");
+public enum TemplateType {
+    CLOUDFORMATION("CloudFormation"),
+    TERRAFORM("Terraform");
     
     private final String displayName;
     
-    Complexity(String displayName) {
+    TemplateType(String displayName) {
         this.displayName = displayName;
     }
     
