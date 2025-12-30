@@ -47,65 +47,22 @@ A modern web application for browsing, searching, and accessing AWS CloudFormati
 - **Auto Scaling Web App**: Load-balanced web application infrastructure
 - **Application Load Balancer**: Advanced load balancing configurations
 
-## 🚀 Quick Start
-
-### Prerequisites
-- Java 21+
-- Node.js 18+
-- Git
-
-### Local Development
-
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/YOUR_USERNAME/cloud-infrastructure-library.git
-   cd cloud-infrastructure-library
-   ```
-
-2. **Start the backend**
-   ```bash
-   ./apache-maven-3.9.6/bin/mvn spring-boot:run
-   ```
-
-3. **Start the frontend** (in a new terminal)
-   ```bash
-   cd frontend
-   npm install
-   npm start
-   ```
-
-4. **Access the application**
-   - Frontend: http://localhost:3000
-   - Backend API: http://localhost:8081
 
 ## 🛠️ Technology Stack
 
 ### Backend
-- **Java 21**: Latest LTS version with modern language features
-- **Spring Boot 3.2**: Enterprise-grade framework
-- **Spring Data JPA**: Database abstraction layer
-- **H2 Database**: In-memory database for development
-- **Maven 3.9.6**: Dependency management and build tool
+- **Java 21**
+- **Spring Boot 3.2**
+- **Spring Data JPA**
+- **H2 Database**
+- **Maven 3.9.6**
 
 ### Frontend
-- **React 18**: Modern UI library with hooks
-- **Axios**: HTTP client for API communication
-- **CSS3**: Modern styling with flexbox and grid
-- **Responsive Design**: Mobile-first approach
+- **React 18**
+- **Axios**
+- **CSS3**
 
-### Infrastructure Templates
-- **CloudFormation**: AWS native infrastructure-as-code
-- **Terraform**: Multi-cloud infrastructure provisioning
-- **YAML/JSON**: Human-readable configuration formats
 
-## 📡 API Endpoints
-
-| Method | Endpoint | Description |
-|--------|----------|-------------|
-| GET | `/api/templates` | Get all templates |
-| GET | `/api/templates/search?query={query}` | Search templates |
-| GET | `/api/templates/category/{category}` | Filter by category |
-| GET | `/api/templates/type/{type}` | Filter by type (CloudFormation/Terraform) |
 
 ## 📁 Project Structure
 
@@ -134,20 +91,6 @@ cloud-infrastructure-library/
 ## 🔗 Related Repositories
 
 - **Templates Repository**: [cloud-infrastructure-templates](https://github.com/Luyanda07/cloud-infrastructure-templates) - Contains all the CloudFormation and Terraform templates
-
-## 🔧 Configuration
-
-### Backend Configuration
-- **Port**: 8081 (configurable in `application.yml`)
-- **Database**: H2 in-memory (auto-configured)
-- **CORS**: Enabled for localhost:3000
-
-### Frontend Configuration
-- **Port**: 3000 (configurable in `package.json`)
-- **API Base URL**: http://localhost:8081
-- **Build Output**: `frontend/build/`
-
-## 🚀 Deployment
 
 ### Backend Deployment
 ```bash
